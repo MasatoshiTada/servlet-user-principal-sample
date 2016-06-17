@@ -1,0 +1,4 @@
+/.idea
+/target
+/build_and_run.sh
+/*.iml
