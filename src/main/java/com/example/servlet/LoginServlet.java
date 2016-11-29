@@ -17,8 +17,8 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            request.login(username, password);
             request.getSession(true);
+            request.login(username, password);
             response.sendRedirect("./ProtectedServlet");
             return;
         } catch (ServletException e) {
